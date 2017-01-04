@@ -22,9 +22,6 @@ app.config(($stateProvider, $urlRouterProvider) => {
         })
 });
 
-app.component('main', {
-    template: 'sdfsdfsdf',
-    export() {
-        console.log(123);
-    }
-});
+
+import main from './components/main/main.component'
+app.component('main', main)

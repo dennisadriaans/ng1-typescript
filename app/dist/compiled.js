@@ -63,12 +63,8 @@
 	        component: 'main'
 	    });
 	});
-	app.component('main', {
-	    template: 'sdfsdfsdf',
-	    export() {
-	        console.log(123);
-	    }
-	});
+	const main_component_1 = __webpack_require__(4);
+	app.component('main', main_component_1.default);
 
 
 /***/ },
@@ -37679,6 +37675,21 @@
 	  .filter('isState', $IsStateFilter)
 	  .filter('includedByState', $IncludedByStateFilter);
 	})(window, window.angular);
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	"use strict";
+	let componentPath = 'app/src/components/main/';
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    templateUrl: componentPath + 'main-component.html',
+	    controller() {
+	        console.log(123);
+	    }
+	};
+
 
 /***/ }
 /******/ ]);
